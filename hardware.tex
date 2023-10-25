@@ -1,0 +1,365 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Israel Escobar-Camacho} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:13126789737}{+1 312 678 9737}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:iescobar@andrew.cmu.edu}{iescobar@andrew.cmu.edu}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/israel-e-c/}{linkedin.com/israel-e-c}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{}{Chicago, IL, US}
+    $|$
+    \faLanguage \hspace{.5pt} {Spanish \& English}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeEducationHeading
+      {Carnegie Mellon University
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Pittsburgh, PA}
+      {B.S in Electrical \& Computer Engineering}{Sep 2019 \textbf{--} May 2024}
+      {M.S in Electrical \& Computer Engineering}{Janurary 2024 \textbf{--} May 2025}
+      %{Minor Degree in Computer Engineering;
+      %\textbf{GPA: 3.58/4.00}}{Oct 2020 \textbf{--} Jun 2023}
+        \resumeItemListStart
+            \resumeItem{\textbf{Relevant Coursework:}{ Introduction to Computer Systems, Structure and Design of Digital Systems, \\ \hspace{111pt}
+            Logic Design and Verification, Computer Systems and Hardware-software interfaces\\ \hspace{111pt}
+            Introduction to Embedded Systems, Computer Architecture}}
+            \resumeItem{\textbf{Scholarships:}{ Tarten Scholar, Renaissance Scholar, Chicago Scholar}}
+        \resumeItemListEnd
+        \vspace{0pt}
+    % \resumeSubheading
+      % {Kocaeli Science High School
+      % \normalfont{(Admission rate: 0.85\%)}
+      % }{Kocaeli, Turkey}
+      % {High School Diploma;   \textbf{GPA: 97.03/100}}{Sep 2014 \textbf{--} Jun 2018}
+
+  \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+
+        \textbf{Languages:}{ C/C++, SystemVerilog, RISC-V ISA, x86-64 ISA, Bash, Python, TCL Scripting} \\ \vspace{3pt}
+
+        \textbf{Technologies:}{ Intel Pin, Git/Github, Quartus, GDB, Linux, Windows Vista/8.1/10, MacOS X, UNIX} \\ \vspace{3pt}
+
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Intel}{Hillsboro, OR}
+      {Pre-silicon IP Validation Intern}{May 2023 \textbf{--} August 2023}
+        \resumeItemListStart
+            \resumeItem{Developed and refactored dynamic Python scripts for new infastructures to support my team efforts}
+            \resumeItem{Self-taught architectural and design knowledge for applying my skills throughout advancing current validation practices}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Teacher Assistant}{Summer 2022}
+        \resumeItemListStart
+            \resumeItem{Supported collaborative learning during lab and instruct recitations varying from 4 to 15 students}
+            \resumeItem{Taught topics ranging from data structures, correctness in C, to big-O time efficency}
+            \resumeItem{Held office hours to support students 1-on-1, including review sessions for larger groups}
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
+    %   {AI Research and Development Intern}{Jan 2022 \textbf{--} Feb 2022, Internship}
+    %     \resumeItemListStart
+    %         \resumeItem{Implemented various NLP tasks, including NER, POS tagging, sentiment analysis, text classification, and extractive/generative QA using transformers and Hugging Face libraries. Conducted a literature review on information retrieval and reading comprehension to stay updated on the state-of-the-art ML models.}
+    %         \resumeItem{Developed a generative question answering system with Dense Passage Retrieval and Retrieval-Augmented Generation techniques using the Haystack framework on Python.}
+    %         \resumeItem{Worked on a Turkish open-domain question answering system by fine-tuning a BERT base model transformer with PyTorch. Evaluated exact match and F1 scores using different Turkish data sets and DeepMind's XQuAD data set and then tabularized the evaluation results.}
+    %     \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RESEARCH EXPERIENCE -----------
+
+\section{Research Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Carnegie Mellon Univ. Department of Electrical \& Computer Engineering}{Pittsburgh, PA}
+      {Undergraduate Researcher}{Janurary 2023 \textbf{--} May 2023}
+        \resumeItemListStart
+            \resumeItem{Dealt with TCL scripting with the Cadence toolset for synthesizing and  performance analyzation}
+            \resumeItem{Worked on ISCAS files and SOP simplification and optimizations through python scripting}
+            \resumeItem{Developed Bash and Python scripts are data analysis and automation}
+        \resumeItemListEnd
+
+    \vspace{14pt}
+
+    \resumeSubheading
+      {Carengie Mellon Univ. Department of Mechanical Engineering }{Pittsburgh, PA}
+      {Undergraduate Researcher}{September 2023 \textbf{--} Current}
+        \resumeItemListStart
+            \resumeItem{Troubleshooted C-based firmware for flashing a STM32 processor on a Custom PCB design}
+            \resumeItem{Developed communication protocols with UART for our chemical sensor EmStat Pico Module}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+% \section{Relevant Courses}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University. (Jul 2023)} \\ \vspace{3pt}
+
+%         \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK). (Dec 2021 \textbf{--} Jun 2022)} \\ \vspace{3pt}
+
+%         \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)} \\ \vspace{3pt}
+
+%         \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK). (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+
+%     }}
+%   \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{Real-Time Kernel}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a mult-threaded Real Time Operating system for a STM32 processor with enforced fixed priority scheduler}
+            \resumeItem{Utilized GDB to step through out x86-64 instructions for my C code and trace assembly code}
+            \resumeItem{Used MMIO to build upon the UART and I2C Drivers for communication between arduino, LEDs, and other electronics}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Branch Predictors}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented branch predictors, meant for computer infrastructures, in C++ code to test efficiency}
+            \resumeItem{Used Pin to run these branch predictors on simulated computer processes given by SPEC2017}
+            \resumeItem{Utilized results, specially picked with Pin, to analyze the efficency and report our discoveries (making claims with our data collected)}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         {Introduction to Computer Systems, Structure and Design of Digital Systems, 
+%         Logic Design and Verification, Computer Systems and Hardware-software interfaces
+%         Introduction to Embedded Systems, Computer Architecture}
+%     }}
+%   \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Swimming, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \resumeSubHeadingListStart
+
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
