@@ -1,2 +1,15 @@
+        software.aux
+        software.fdb_latexmk
+        software.fls
+        software.log
+        software.out
+        software.synctex.gz
+
+        hardware.aux
+        hardware.fdb_latexmk
+        hardware.fls
+        hardware.log
+        hardware.out
+        hardware.synctex.gz
 hardware.* !hardware.tex !hardware.pdf
 software.* !software.tex !software.pdf
