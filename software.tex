@@ -135,7 +135,7 @@
     \small
     \faMobile \hspace{.5pt} \href{tel:13126789737}{+1 312 678 9737}
     $|$
-    \faAt \hspace{.5pt} \href{mailto:iescobar@andrew.cmu.edu}{iescobar@andrew.cmu.edu}
+    \faAt \hspace{.5pt} \href{mailto:iescobar@alumni.cmu.edu}{iescobar@alumni.cmu.edu}
     $|$
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/israel-e-c/}{linkedin.com/israel-e-c}
     $|$
@@ -190,11 +190,12 @@
     \small{\item{
 
         \textbf{Languages:}{ C/C++, Bash, Python, 
-        SML, Java, Matplotlib, %} \\ \vspace{3pt}%software
-        TCL Scripting, SystemVerilog, RISC-V ISA, x86-64 ISA} \\ \vspace{3pt}%hardware
+        Java, Matplotlib, %} \\ \vspace{3pt}%software
+        RISC-V ISA, x86-64 ISA, ARM32/Thumb ISA, ARM64} \\ \vspace{3pt}%hardware
 
 
-        \textbf{Technologies:}{ Matplotlib, Git/Github, GDB, Linux, Windows Vista/8.1/10, MacOS X, UNIX} \\ \vspace{3pt}
+        \textbf{Technologies:}{ Git/Github, Confluence, Linux, Proxmox VE, Windows Vista/8.1/10/11, MacOS X, UNIX, Software Defined Radios,  
+                                Real-Time Embedded Systems, GDB, JTAG, Ghidra, Cryptographic tools, Docker} \\ \vspace{3pt}
 
     }}
   \resumeSubHeadingListEnd
@@ -215,13 +216,23 @@
             \resumeItem{Self-taught architectural and design knowledge for applying my skills throughout advancing current validation practices}
         \resumeItemListEnd
 
+    % \resumeSubheading
+    %   {Carnegie Mellon University}{Pittsburgh, PA}
+    %   {Teacher Assistant for Principals of Imperative Computation}{May 2022 \textbf{--} June 2022}
+    %     \resumeItemListStart
+    %         \resumeItem{Supported collaborative learning during lab and instruct recitations varying from 4 to 15 students}
+    %         \resumeItem{Taught topics ranging from data structures, correctness in C, to big-O time efficency}
+    %         \resumeItem{Held office hours to support students 1-on-1, including review sessions for larger groups}
+    %     \resumeItemListEnd
+    
     \resumeSubheading
-      {Carnegie Mellon University}{Pittsburgh, PA}
-      {Teacher Assistant for Principals of Imperative Computation}{May 2022 \textbf{--} June 2022}
+      {Motorola Solutions Inc.}{Schaumburg, IL}
+      {Embedded Software Engineer}{July 2024 \textbf{--} Current}
         \resumeItemListStart
-            \resumeItem{Supported collaborative learning during lab and instruct recitations varying from 4 to 15 students}
-            \resumeItem{Taught topics ranging from data structures, correctness in C, to big-O time efficency}
-            \resumeItem{Held office hours to support students 1-on-1, including review sessions for larger groups}
+            \resumeItem{Applied reverse engineering tatics, self-guided research, and critical thinking to provide customer-focused solutions}
+            \resumeItem{Utilized Radio Frequency traffic, JTAG, and company standard tools to debug embedded systems}
+            \resumeItem{Depended on AES, HMAC-SHA256, and ARC4 knowledge to solve niche problems}
+            \resumeItem{Documented future improvements, solutions, and self-guided findings to support team efforts}
         \resumeItemListEnd
 
     % \resumeSubheading
@@ -246,20 +257,20 @@
 
     \resumeSubheading
     {Carengie Mellon Univ. Department of Mechanical Engineering }{Pittsburgh, PA}
-    {Undergraduate Researcher}{September 2023 \textbf{--} Current}
+    {Undergraduate Researcher}{September 2023 \textbf{--} December 2023}
       \resumeItemListStart
           \resumeItem{Troubleshooted C-based firmware for flashing a STM32 processor on a Custom PCB design}
           \resumeItem{Developed communication protocols with UART for our chemical sensor EmStat Pico Module}
     \resumeItemListEnd
 
-    \resumeSubheading
-      {Carnegie Mellon Univ. Department of Electrical \& Computer Engineering}{Pittsburgh, PA}
-      {Undergraduate Researcher}{Janurary 2023 \textbf{--} May 2023}
-        \resumeItemListStart
-            \resumeItem{Dealt with TCL scripting with the Cadence toolset for synthesizing and  performance analyzation}
-            \resumeItem{Worked on ISCAS files and SOP simplification/optimizations through python scripting}
-            \resumeItem{Developed Bash and Python scripts for data analysis and automation}
-        \resumeItemListEnd
+    % \resumeSubheading
+    %   {Carnegie Mellon Univ. Department of Electrical \& Computer Engineering}{Pittsburgh, PA}
+    %   {Undergraduate Researcher}{Janurary 2023 \textbf{--} May 2023}
+    %     \resumeItemListStart
+    %         \resumeItem{Dealt with TCL scripting with the Cadence toolset for synthesizing and  performance analyzation}
+    %         \resumeItem{Worked on ISCAS files and SOP simplification/optimizations through python scripting}
+    %         \resumeItem{Developed Bash and Python scripts for data analysis and automation}
+    %     \resumeItemListEnd
 
     %\vspace{14pt}
 
@@ -280,18 +291,27 @@
       \resumeProjectHeading
         {\textbf{Real-Time Kernel}}{}
           \resumeItemListStart
-            \resumeItem{Developed a mult-threaded Real Time Operating System for a STM32 processor with enforced fixed priority scheduler}
-            \resumeItem{Utilized GDB to step through out x86-64 instructions for my C code and trace assembly code}
+            \resumeItem{Developed a multi-threaded Real Time Operating System for a STM32 processor with enforced fixed priority scheduler}
+            \resumeItem{Utilized GDB to step through out Thumb instructions for my C code and trace assembly code}
             \resumeItem{Used MMIO to build upon the UART and I2C Drivers for communication between arduino, LEDs, and other electronics}
           \resumeItemListEnd
 
       \resumeProjectHeading
-        {\textbf{Branch Predictors}}{}
+        {\textbf{Homelab Server}}{}
           \resumeItemListStart
-            \resumeItem{Implemented branch predictors, meant for computer infrastructures, in C++ code to test efficiency}
-            \resumeItem{Used Intel Pin to run these branch predictors on simulated computer processes given by SPEC2017}
-            \resumeItem{Utilized results, specially picked with Pin, to analyze the efficency and report our discoveries (making claims with our data collected)}
+            \resumeItem{Developing a 32TB homelab server to serve varying applications to a multitude of people}
+            \resumeItem{Planned out network solutions such as Wireguard, Pihole, Caddy, and Authelia to ensure secure connections and prevent AD tracking}
+            \resumeItem{Printing server rack accessories for repurposed laptop, Hard Disk Drives, Network Switches, Router, and Access Point}
+            \resumeItem{Heavily utilizing Open Source Solutions and documentation to self teach and apply new found skills}
           \resumeItemListEnd
+
+      % \resumeProjectHeading
+      %   {\textbf{Branch Predictors}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Implemented branch predictors, meant for computer infrastructures, in C++ code to test efficiency}
+      %       \resumeItem{Used Intel Pin to run these branch predictors on simulated computer processes given by SPEC2017}
+      %       \resumeItem{Utilized results, specially picked with Pin, to analyze the efficency and report our discoveries (making claims with our data collected)}
+      %     \resumeItemListEnd
 
         % \resumeProjectHeading
         % {\textbf{2-way superscaler 5-Staged RISC-V processor}}{}
