@@ -12,7 +12,8 @@
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
+\usepackage{multicol}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
@@ -156,7 +157,7 @@
       {Carnegie Mellon University
       % \normalfont{(Admission rate: 0.09\%)}
       }{Pittsburgh, PA}
-      {B.S in Electrical \& Computer Engineering}{Sep 2020 \textbf{--} May 2024}
+      {B.S in Electrical \& Computer Engineering}{}
       %{M.S in Electrical \& Computer Engineering}{Janurary 2024 \textbf{--} May 2025}
       %{Minor Degree in Computer Engineering;
       %\textbf{GPA: 3.58/4.00}}{Oct 2020 \textbf{--} Jun 2023}
@@ -164,26 +165,53 @@
 
   \resumeSubHeadingListEnd
 
-  \resumeItemListStart
-  \resumeItem{\textbf{Relevant Coursework:}{ Introduction to Computer Systems, Computer Systems and Hardware-software interfaces,\\ \hspace{111pt}
-  Introduction to Embedded Systems,
-  %Hardware
-  % Structure and Design of Digital Systems,\\ \hspace{111pt}
-  % Logic Design and Verification,
-  % Computer Architecture
-  %Software
-  Functional Programming,\\ \hspace{111pt}
-  Introduction to Computer Secuirity,
-  Principals of Imperative Computation
-  }}
-  
-  \resumeItem{\textbf{Scholarships:}{ Tarten Scholar, Renaissance Scholar, Chicago Scholar}}
-\resumeItemListEnd
+  \small{\quad\textbf{Relevant Coursework:}}
+  Computer Systems and Hardware-software interfaces, Introduction to Computer Systems\\
+  \makebox[4.35cm]{} Introduction to Embedded Systems, Functional Programming, \\
+  \makebox[4.35cm]{} Introduction to Computer Secuirity, Principals of Imperative Computation
+
+  % \resumeItemListStart
+  % \resumeItem{\textbf{Relevant Coursework:}{ Introduction to Computer Systems, Computer Systems and Hardware-software interfaces,\\ \hspace{111pt}
+  % Introduction to Embedded Systems,
+  % %Hardware
+  % % Structure and Design of Digital Systems,\\ \hspace{111pt}
+  % % Logic Design and Verification,
+  % % Computer Architecture
+  % %Software
+  % Functional Programming,\\ \hspace{111pt}
+  % Introduction to Computer Secuirity,
+  % Principals of Imperative Computation}}
+  % % \resumeItem{\textbf{Scholarships:}{ Tarten Scholar, Renaissance Scholar, Chicago Scholar}}
+  % \resumeItemListEnd
+\vspace{-12pt}
+
+% This in here in case I want computer to read better
+%----------- RELEVANT COURSES -----------%
+% \section{Relevant Courses}
+%   \vspace{-12pt}
+%   % \begin{itemize*}[itemjoin=\qquad]
+%   %   \item Introduction to Computer Systems
+%   %   \item Computer Systems and Hardware-Software interfaces
+%   %   \item Introduction to Embedded Systems
+%   %   \item Functional Programming
+%   %   \item Introducton to Computer Secuirity
+%   %   \item Principals of Imperative Computation
+%   % \end{itemize*}
+%   \begin{multicols}{2}
+%     \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%       \item Introduction to Computer Systems
+%       \item Introduction to Embedded Systems
+%       \item Introducton to Computer Secuirity
+%       \item Functional Programming
+%       \item Principals of Imperative Computation
+%       \item Computer Systems and Hardware-Software interfaces
+%     \end{itemize}
+%   \end{multicols}
+
 
 
 
 %----------- SKILLS -----------
-
 \section{Skills}
   \vspace{2pt}
   \resumeSubHeadingListStart
@@ -208,6 +236,16 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
 
+  \resumeSubheading
+  {Motorola Solutions Inc.}{Schaumburg, IL}
+  {Embedded Software Engineer}{July 2024 \textbf{--} Current}
+    \resumeItemListStart
+        \resumeItem{Applied reverse engineering tatics, self-guided research, and critical thinking to provide customer-focused solutions}
+        \resumeItem{Utilized Radio Frequency traffic, JTAG, and company standard tools to debug embedded systems}
+        \resumeItem{Depended on AES, HMAC-SHA256, and ARC4 knowledge to solve niche problems}
+        \resumeItem{Documented future improvements, solutions, and self-guided findings to support team efforts}
+    \resumeItemListEnd
+
     \resumeSubheading
       {Intel}{Hillsboro, OR}
       {Pre-silicon IP Validation Intern}{May 2023 \textbf{--} August 2023}
@@ -216,23 +254,13 @@
             \resumeItem{Self-taught architectural and design knowledge for applying my skills throughout advancing current validation practices}
         \resumeItemListEnd
 
-    % \resumeSubheading
-    %   {Carnegie Mellon University}{Pittsburgh, PA}
-    %   {Teacher Assistant for Principals of Imperative Computation}{May 2022 \textbf{--} June 2022}
-    %     \resumeItemListStart
-    %         \resumeItem{Supported collaborative learning during lab and instruct recitations varying from 4 to 15 students}
-    %         \resumeItem{Taught topics ranging from data structures, correctness in C, to big-O time efficency}
-    %         \resumeItem{Held office hours to support students 1-on-1, including review sessions for larger groups}
-    %     \resumeItemListEnd
-    
     \resumeSubheading
-      {Motorola Solutions Inc.}{Schaumburg, IL}
-      {Embedded Software Engineer}{July 2024 \textbf{--} Current}
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Teacher Assistant for Principals of Imperative Computation}{May 2022 \textbf{--} June 2022}
         \resumeItemListStart
-            \resumeItem{Applied reverse engineering tatics, self-guided research, and critical thinking to provide customer-focused solutions}
-            \resumeItem{Utilized Radio Frequency traffic, JTAG, and company standard tools to debug embedded systems}
-            \resumeItem{Depended on AES, HMAC-SHA256, and ARC4 knowledge to solve niche problems}
-            \resumeItem{Documented future improvements, solutions, and self-guided findings to support team efforts}
+            \resumeItem{Supported collaborative learning during lab and instruct recitations varying from 4 to 15 students}
+            \resumeItem{Taught topics ranging from data structures, correctness in C, to big-O time efficency}
+            \resumeItem{Held office hours to support students 1-on-1, including review sessions for larger groups}
         \resumeItemListEnd
 
     % \resumeSubheading
